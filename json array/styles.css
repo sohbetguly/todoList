@@ -1,0 +1,239 @@
+body {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+
+}
+
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.list {
+  font-size: 25px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.card {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  background-color: tomato;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+  display: grid;
+}
+
+.wrapper {
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.parDesign {
+  position: relative;
+  color: rgb(236, 236, 236);
+  font-size: 12px;
+}
+
+.greenCol {
+  background-color: green;
+}
+
+.redCol {
+  background-color: red;
+}
+.redCol,
+.greenCol {
+  font-size: 18px;
+  color: white;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+.redCol:hover,
+.greenCol:hover {
+  color: #3c4fe0;
+  transition: 0.3s ease-in-out;
+  color: black;
+  background-color: #fff;
+}
+
+.division {
+  display: grid;
+}
+
+.buttons {
+  margin: 10px;
+}
+
+.one {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.one:hover {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #4c5aca 100%
+  );
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  transition: 0.27s ease-in-out;
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    display: grid;
+    width: 310px;
+    height: 1600px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .parDesign {
+    position: relative;
+    top: 60px;
+  }
+
+  .list {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 550px) {
+  .wrapper {
+    display: grid;
+    width: 600px;
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .parDesign {
+    position: relative;
+    top: 50px;
+  }
+
+  .list {
+    font-size: 20px;
+  }
+
+ 
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    width: 700px;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  .parDesign {
+    position: relative;
+    top: 50px;
+    font-size: 10px;
+  }
+
+  .list {
+    font-size: 16px;
+  }
+
+  .card{
+    width: 300px;
+    height: 200px;
+  }
+
+  .card h1{
+    font-size: 24px;
+    color: black;
+  }
+
+  .todoListWrapper {
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.todoListWrapper {
+  display: grid;
+  justify-content: center; 
+}
